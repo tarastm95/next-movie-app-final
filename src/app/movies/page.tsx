@@ -1,7 +1,7 @@
 import MoviesList from '@/app/components/MoviesList';
 import { fetchMovies } from '@/app/services/moviesService';
 
-export default async function Home({ searchParams }: { searchParams: { page?: string } }) {
+export default async function Page({ searchParams }: { searchParams: { page?: string } }) {
     const page = searchParams.page ? parseInt(searchParams.page, 10) : 1;
 
     try {
